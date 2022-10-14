@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 1</title>
+    <style>
+        ul{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+            background-color: burlywood;
+        }
+        li{
+            float:left;
+        }
+        li a:hover{
+            background-color:darkkhaki;
+        }
+        li a{
+            display:block;
+            color:white;
+            text-align: center;
+            padding:14px 16px;
+            text-decoration: none;
+        }
+        li.dropdown{
+            display:inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: lightgreen;
+            min-width: 160px;
+            box-shadow:0px 8px 16px 0px rgba(red, green, blue, alpha)
+            z-index:1;
+        }
+        .dropdown-context{
+            color:black;
+            padding:12px 16px;
+            text-decoration:none;
+            display:block;
+            text-align: left;
+        }
+        .dropdown-content a:hover{
+            background-color: aquamarine;
+        }
+        .dropdown:hover .dropdown-content{
+            display:block;
+        }
+        h1{
+            font-family:serif;
+            color:purple;
+            text-align: center;  
+        }
+        h3{
+            font-family: cursive;
+            color:aqua;
+            text-align: center;
+        }
+        h2{
+            font-family: Tangerine,serif;
+        }
+        p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:hotpink;
+            size: 1.2em;
+        }  
+        div.a{
+            text-indent:30px;
+        }
+        img{
+            float:left;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        body{
+            background-color:darkseagreen;
+            margin-left: 120px;
+            margin-right: 120px;
+            font-family:'Times New Roman', Times, serif;
+        }
+        a{
+            text-decoration: solid;
+        }
+        .simple-linear{
+            background:linear-gradient(lime,green);
+        }
+     /*I used the gradient element for CSS and I learned it from MDM Web Docs*/   
+    </style>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Tangerine">
+  </head>
+    <body class="simple-linear">
+    <h1>All About Eesha Bilal</h1>
+    <h3>Quick Links:</h3>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="https://github.com/ebilal1/WebTech">GitHub</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Homework 2</a>
+            <div class="dropdown-content">
+                <a href="hw2-1.html">Homework 2-1</a>
+                <a href="hw2-2.html">Homework 2-2</a>
+                <a href="hw2-3.html">Homework 2-3</a>
+                <a href="hw-2-MDN.html">Homework MDM</a>
+            </div>
+        </li>
+    </ul>
+
+    <a href="#AboutMe"> About Me!</a>
+    <a href="#MyInterests"> My Interests!</a>
+    <hr>
+    <h2>About Me!</h2>
+    <div class="a">
+    <p>
+        <img src="images/eesha.jpg" alt="eesha" height="200" />
+      Hi everyone! My name is Eesha Bilal and I am from Pakistan. I am currently
+      a Junior here and am planning to concentrate in Technology
+      Entrepreneurship.I do not like Boston as much but I am here for two more
+      years so I can't complain. Other than that I am still looking forward to
+      spending the rest of my time here
+    </p>
+</div>
+    <p id="AboutMe">About Me!</p>
+    <div class="a">
+    <p>
+      I came to <a href="https://www.babson.edu">Babson College</a> originally
+      because the Entrepreneurship program here was solid. After all, they have
+      been named the Number 1 Entrepreneurship college for the 26th time this
+      year. I also believe that Babson will provide me with the best information
+      and advice if I ever decide to have my own startup. After graduation I
+      plan on working with my family business in Pakistan but before that I will
+      definitely start my own business.
+    </p>
+    </div>
+    <h2 id="MyInterests">My Interests!</h2>
+    <div class="a">
+    <p>
+      My interests include watching tv shows, running, reading, and playing
+      squash. Regardless of the fact that I play squash, my favorite sport would
+      still have to be
+      <a href="https://www.espn.com/soccer/scoreboard">soccer.</a> My favorite
+      player is Messi and there is no argument that could say that Messi is not
+      the best player in the world.
+        <img src="https://www.history.com/.image/t_share/MTU3ODc4NjAyNDUwNTQzOTQ1/ask-history-why-do-some-people-call-it-soccer-istock_000001603793larg2e-2.jpg"
+        height="200"/>
+    </p>
+    </div>
+    <article class="forecast">
+    <h2>Weather forecast for Boston</h2>
+    <article class="day-forecast">
+        <h3>Sept 16</h3>
+        <p>It is really cold in Boston today</p>
+        </article>
+        <article class="day-forecast">
+            <h3>Sept 16</h3>
+            <p>It is really hot in Pakistan today.</p>
+            </article>
+    <hr>
+    <a href="sitemap.html"><sitemap class="html">My Work in WebTech</a>
+        <!--I used the article tag and put it as the weather and learned it from MDN Web Docs-->
+        <a href="ilovedubai.social"></a>
+  </body>
+</html>
