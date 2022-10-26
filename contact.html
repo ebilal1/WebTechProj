@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everyday Life</title>
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .navbar{
+            overflow:hidden;
+            background-color: mediumspringgreen;
+        }
+        .navbar a{
+            float:left;
+            display: block;
+            color:azure;
+            text-align: center;
+            padding:14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover{
+            background-color: lightseagreen;
+        }
+        form{
+            background-color: white;
+            font-weight: 800;
+            color: mediumspringgreen;
+            padding:10px;
+            width:500px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        body{
+            color:black;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+        .container{
+            display:block;
+            position:relative;
+            user-select:auto;
+        }
+        h1{
+            margin-top:auto;
+            text-align: center;
+            color:mediumspringgreen;
+        }
+        </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="restaurant.html">Restaurants</a>
+        <a href="nightlife.html">Night Life</a>
+        <a href="everyday.html">Everyday Activites</a>
+        <a href="sitemap.html" >Sitemap</a>
+        <a href="contact.html">Contact</a>
+        </div>
+        <h1>Please feel free to leave a review!</h1>
+        <form action="https://oim-apis.herokuapp.com/form"method="post">
+            <fieldset>
+                <legend>Your Information:</legend>
+                <div>
+                <label for="Name">Name:</label>
+                <input
+                type="text"
+                placeholder="Enter your name here"
+                size="30"
+                id="input-name"
+                name="Name"
+                />
+                </div>
+            <div>
+                <label for="input-email">Email:</label>
+                <input type="text"
+                placeholder="Enter your email here"
+                size="30"
+                id="input-email"
+                name="Email"
+                />
+            </div>
+          
+            </fieldset>
+            
+            <fieldset>
+                <legend>Your Review:</legend>
+                <div>
+                    <label for="product-select">What page did you like the best?</label>
+                    <select name="product" id="product-select">
+                        <option value="Everyday Activities">Everyday Activities</option>
+                        <option value="Night Life">Night Life</option>
+                        <option value="Restaurants">Restaurants</option>
+                    </select> 
+                </div>
+            <div>
+                What do you think of this page?:
+            </div>
+            <div>
+                <label> 
+                    <input type="radio" name="radio" name="satisfaction" value="great"/>Great </label>
+                    <label>
+                    <input type="radio" name="satisfaction" value="awesome"/>Awesome</label>
+                    <label>
+                    <input type="radio" name="satisfaction" value="good"/>Good</label>
+            </div>
+            <div>
+                <label for="comments">Comments:</label>
+            </div>
+            <div>
+                <textarea id="comments"
+                name="comments"
+                rows="5"
+                cols="25"
+                ></textarea>
+            </div>
+            <div>
+                <label class="container">Sign me up for email updates
+                    <input type="checkbox" id="checkbox" name="checkbox" checked>
+                    <span class="checkmark"></span>
+                </label>
+              </div>
+              <div>
+                <button type="submit">Submit
+                </button>
+                <input type="reset" value="Reset"/>
+            </div>
+        </form>
+</body>
+</html>
