@@ -10,7 +10,7 @@
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
         .header{
-            padding:80px;
+            padding:60px;
             text-align:center;
             background: lightseagreen;
             color:azure;
@@ -21,13 +21,21 @@
         .container{
             position:relative;
             text-align:center;
-            color:gold;
+            color:white;  
         }
         .centered{
             position:absolute;
             top:50%;
             left:50%;
             transform: translate(-50%, -50%);
+            border: 2px solid white;
+            border-radius:11%;
+            padding:25px;
+            text-decoration: dotted;
+        }
+        .centered:hover{
+            color:gold;
+            border:1px solid gold;
         }
         .navbar{
             overflow:hidden;
@@ -40,6 +48,9 @@
             text-align: center;
             padding:14px 20px;
             text-decoration: none;
+        }
+        .navbar a:hover{
+            background-color: lightseagreen;
         }
         *{
             box-sizing: border-box;
@@ -67,12 +78,12 @@
 </head>
 <body>
     <div class="navbar">
-        <a href="#">Home</a>
-        <a href="#">Restaurants</a>
-        <a href="#">Night Life</a>
-        <a href="#">Everyday Activites</a>
-        <a href="#" class="right">Sitemap</a>
-        <a href="#">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="restaurant.html">Restaurants</a>
+        <a href="nightlife.html">Night Life</a>
+        <a href="everyday.html">Everyday Activites</a>
+        <a href="sitemap.html" >Sitemap</a>
+        <a href="contact.html">Contact</a>
         </div>
     <div class="header">
     <h1>Fun in Dubai!</h1>
@@ -80,7 +91,8 @@
     </div>
     <div class="container">
         <img src="https://cdn.britannica.com/15/189715-050-4310222B/Dubai-United-Arab-Emirates-Burj-Khalifa-top.jpg" alt="Dubai" style="width:100%">
-        <div class="centered">City of Gold</div>
+       
+        <div class="centered"> <a href="https://www.youtube.com/watch?v=SLaYPmhse30">City of Gold></a></div>
     </div>
     <div class="row">
         <div class="side">..</div>
