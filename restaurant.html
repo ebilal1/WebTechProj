@@ -8,6 +8,7 @@
     <style>
         body{
             font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: lightseagreen;
         }
         .header{
             padding:80px;
@@ -30,6 +31,38 @@
         .navbar a:hover{
             background-color: lightseagreen;
         }
+        h1{
+            text-align: center;
+        }
+        .restaurant{
+            width:100%;
+            margin:auto;
+            text-align: center;
+            padding-top:100px;
+        }
+        .restaurant-col{
+            float:center;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            padding:5px;
+        }
+        .row{
+            max-width:100%;
+            margin-right:auto;
+            margin-left:auto;
+        }
+        /* .row:hover{
+            cursor: pointer;
+        } */
+
+        .restaurant-col img{
+            width:44%;
+            height:44%;
+        }
+        .restaurant-col p{
+            padding:0;
+        }
         </style>
 </head>
 <body>
@@ -41,5 +74,35 @@
         <a href="sitemap.html" >Sitemap</a>
         <a href="contact.html">Contact</a>
         </div>
+
+       <section class="restaurant">
+        <h1>Best Savory Food:</h1>
+
+        <div class="row">
+            <div class="restaurant-col">
+                <h3>SALT</h3>
+                <p>Looking for a place to eat on the beach? Check out SALT located at La Mer Beach Dubai!</p>
+               <img src="images/salt.jpg" title="salt restaurant">
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="restaurant-col">
+                    <h3>Parkers</h3>
+                   <p>By far one of the best restaurants at Dubai Mall!</p>
+                   <img src="images/parkers.jpg" alt="salt" title="salt restaurant">
+                </div>
+
+                <br>
+                <div class="row">
+                    <div class="restaurant-col">
+                        <h3>Eauzone</h3>
+                       <p>Stylish beach dining with the best Asian food!</p>
+                       <img src="images/eauzone.jpg">
+                    </div>
+                    
+        </div>
+       </section>
 </body>
 </html>
