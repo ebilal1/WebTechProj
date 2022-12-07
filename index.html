@@ -12,7 +12,7 @@
         .header{
             padding:60px;
             text-align:center;
-            background: lightseagreen;
+            background: black;
             color:azure;
         }
         .header h1{
@@ -50,7 +50,7 @@
         }
         .navbar{
             overflow:hidden;
-            background-color: mediumspringgreen;
+            background-color: green;
         }
         .navbar a{
             float:left;
@@ -61,21 +61,20 @@
             text-decoration: none;
         }
         .navbar a:hover{
-            background-color: lightseagreen;
+            background-color: red;
         }
-        *{
-            box-sizing: border-box;
-        }
+       
         .footer{
             padding:20px;
             text-align:center;
-            background:lightseagreen;
+            background:black;
             color:azure;
         }
     </style>
     
    
 <body>
+    
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="restaurant.html">Restaurants</a>
@@ -95,6 +94,17 @@
     </div>
     <div class="footer">
         <p>This website is for people who are interested in traveling to Dubai! From amazing restaurants to jetskiing on the beach, this website will provide you with all the fun spots you need to know about!</p>
+
+        <script>
+            function changeBackgroundColor(){
+                const bgColors =["red","green","black"];
+                const n=bgColors.length;
+                const randIndex= Math.floor(Math.random()*n);
+                const b=document.querySelector("h1");
+                b.style.backgroundColor=bgColors[randIndex];
+            }
+            document.querySelector("h1").onclick=changeBackgroundColor;
+        </script>
 
 </body>
 </html>
