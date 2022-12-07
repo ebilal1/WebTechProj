@@ -78,9 +78,19 @@ table{
     border-color:gold;
     background-color:gold;
 }
+div{
+    position:relative;
+    background-color: black;
+}
+#lyrics{
+    position:absolute;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
         </style>
 </head>
 <body>
+    
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="restaurant.html">Restaurants</a>
@@ -92,7 +102,38 @@ table{
 </body>
 <body
 class="body-2">
-<h1>Best Places to go at Night:</h1>
+          
+<div>
+<h2 id="lyrics">This text will move</h2>
+</div>
+<script>
+    const LYRICS=[
+           "BEST PLACES TO GO AT NIGHT",
+           "You'll have a blast!",
+       ];
+       const lyricsEl=document.getElementById("lyrics");
+       let p = 5;
+       let index = 0;
+
+       function move() {
+        lyricsEl.innerHTML = LYRICS[index];
+        lyricsEl.style.left = p + "px";
+        if (p > document.querySelector("div").clientWidth - 350) {
+          p = 5;
+          index++;
+          if (index === LYRICS.length) {
+            index = 0;
+          }
+        } else {
+          p = p + 5;
+        }
+        setTimeout(move, 50);
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        move();
+      });
+</script>
 <table>
     <tr>
         <td class="t1"><strong>BLU Dubai</strong></td>
