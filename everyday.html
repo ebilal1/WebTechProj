@@ -64,41 +64,69 @@
             <div class="restaurant-col">
                 <h3><a href="https://www.burjkhalifa.ae/en/">Burj Khalifa</a></h3>
                 <p>The tallest tower in the world and one of the top attractions in Dubai!</p>
-               <img src="https://cdn.britannica.com/37/135437-050-A12461CC/Burj-Khalifa-world-Sheikh-Khalifah-ibn-Zayid-2010.jpg" title="Burj Khalifa" height="300" width="300">
+               <img src="https://cdn.britannica.com/37/135437-050-A12461CC/Burj-Khalifa-world-Sheikh-Khalifah-ibn-Zayid-2010.jpg" title="Burj Khalifa" height="300" width="300" id="burj-1">
             </div>
 
                 <div class="restaurant-col">
                     <h3><a href="https://www.burjkhalifa.ae/en/downtown-dubai/the-dubai-fountain/">The Dubai Fountain</a></h3>
                    <p>This is the world's tallest performing fountain choreographed to music.</p>
-                   <img src="https://media.cntraveler.com/photos/5a847e0f1eb1e03b9678c1e1/16:9/w_2560,c_limit/Dubai-Fountain_2018_GettyImages-625721620.jpg" alt="Dubai Fountain" height="300" width="300">
+                   <img src="https://media.cntraveler.com/photos/5a847e0f1eb1e03b9678c1e1/16:9/w_2560,c_limit/Dubai-Fountain_2018_GettyImages-625721620.jpg" alt="Dubai Fountain" height="300" width="300" id="rest-1">
                 </div>
 
  
                     <div class="restaurant-col">
                         <h3><a href="https://thedubaimall.com/">The Dubai Mall</a></h3>
                        <p>Known for its luxury stores and aquarium, you can do just about anything in this mall!</p>
-                       <img src="https://media.cntraveler.com/photos/5a847a497211e1293261ceb3/16:9/w_2560,c_limit/Dubai-Mall_2018_Dubai-Mall_GettyImages-520302504-copy.jpg" height="300" width="300">
+                       <img src="https://media.cntraveler.com/photos/5a847a497211e1293261ceb3/16:9/w_2560,c_limit/Dubai-Mall_2018_Dubai-Mall_GettyImages-520302504-copy.jpg" height="300" width="300" id="mall-1">
                     </div>
 
                     <div class="restaurant-col">
                         <h3><a href="https://www.globalvillage.ae/">Global Village</a></h3>
                        <p>This is the first family destination for culture and entertainment.It highlights almost every countries culture while taking guests through an array of journies.</p>
-                       <img src="https://comingsoon.ae/wp-content/uploads/2022/08/FZTgM3XXgAA-MD_.jpg" height="300" width="300">
+                       <img src="https://comingsoon.ae/wp-content/uploads/2022/08/FZTgM3XXgAA-MD_.jpg" height="300" width="300" id="global-1">
                     </div>
 
                     <div class="restaurant-col">
                         <h3><a href="https://www.thedubaiframe.com/">Dubai Frame</a></h3>
                        <p>A gigantic building that shows both old and new Dubai from its deck.</p>
-                       <img src="https://images.adsttc.com/media/images/5a4b/bce6/b22e/38b5/fa00/0067/newsletter/Screen_Shot_2018-01-02_at_12.05.08_PM.jpg?1514912994" height="300" width="300">
+                       <img src="https://images.adsttc.com/media/images/5a4b/bce6/b22e/38b5/fa00/0067/newsletter/Screen_Shot_2018-01-02_at_12.05.08_PM.jpg?1514912994" height="300" width="300" id="frame-1">
                     </div>
 
                     <div class="restaurant-col">
                         <h3><a href="https://www.atlantis.com/dubai">Atlantis Waterpark</a></h3>
                        <p>The world's largest waterpark with over 105 slides and attractions!</p>
-                       <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/b2/2e/64/atlantis-the-palm.jpg?w=700&h=-1&s=1" height="300" width="300">
+                       <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/b2/2e/64/atlantis-the-palm.jpg?w=700&h=-1&s=1" height="300" width="300" id="atlantis-1">
                     </div>
                     
         </div>
+        <script>
+            function enlargeImage(){
+                console.log("...starting function enlargeImage...")
+                const myImg= document.getElementById("burj-1");
+                let x = myImg.width;
+                x = x+100;
+                myImg.width = x;
+            }
+            document.getElementById("burj-1").addEventListener("mouseover", function () {
+            enlargeImage();
+          });
+    
+          function reduceImage(){
+            console.log("..starting function reduce image..");
+            const imageEl=document.getElementById("burj-1");
+            let x=imageEl.width;
+            x= x/1.2;
+            imageEl.width=x;
+          }
+          document.getElementById("burj-1").addEventListener("mouseout",
+          function (){
+            reduceImage();
+          });
+          
+          document.querySelector("h1").innerText=imageEl.title;
+
+    </script>
+   
        </section>
 </body>
 </html>
